@@ -1,17 +1,7 @@
-# Ressonar
-Este projeto faz parte do meu portfólio profissional e foi desenvolvido com o objetivo de demonstrar minhas habilidades em desenvolvimento front-end, organização de código e estruturação de projetos web. Além de apresentar o resultado final, este repositório permite que recrutadores, clientes e outros desenvolvedores avaliem a qualidade do meu código, minha forma de trabalhar e minhas práticas de desenvolvimento.
+## HAVE A'GANDER
+This project forms part of my professional portfolio and was developed to demonstrate my front-end development skills, code organisation, and approach to structuring web projects. In addition to showcasing the final product, this repository allows recruiters, clients, and fellow developers to assess the quality of my code, my workflow, and the development practices I apply throughout a project. Areas of evalution: HTML structure, SASS organisation and styling, responsive design, JavaScript functionality, file and folder organisation, and development best practices.
 
-## Visualização
-🔗 https://markusvdc.github.io/ressonar/
-
-## Avaliações
-- Estrutura HTML
-- Organização e estilização com SASS
-- Responsividade
-- Funcionalidades em JavaScript
-- Organização de arquivos e pastas
-- Boas práticas de desenvolvimento
-
-## Desenvolvedor
+## TY'FOR DROPPED
 **Markus Vinicius Domenegheti Cruz**  
-Web Designer / Desenvolvedor Front-end WordPress
+Developed in Visual Studio Code and designed with Figma.  
+WordPress Web Designer and Front-end Developer.
