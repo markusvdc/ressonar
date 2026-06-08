@@ -1,0 +1,178 @@
+@use 'variables'
+
+.about
+	padding: 140px 0 110px
+	@media (max-width: variables.$breakpoint-xl)
+		padding: 100px 0 80px
+	@media (max-width: variables.$breakpoint-lg)
+		padding: 100px 0 25px
+	@media (max-width: variables.$breakpoint-md)
+		padding: 100px 0 0
+	@media (max-width: variables.$breakpoint-sm)
+		padding: 60px 0 0
+
+.about__container
+	display: flex
+	justify-content: space-between
+	position: relative
+	column-gap: 130px
+	@media (max-width: variables.$breakpoint-xl)
+		column-gap: 80px
+	@media (max-width: variables.$breakpoint-lg)
+		column-gap: 40px
+	@media (max-width: variables.$breakpoint-md)
+		flex-direction: column
+		row-gap: 40px
+
+.about__visual
+	padding-right: 300px
+	@media (max-width: variables.$breakpoint-xl)
+		padding-right: 270px
+	@media (max-width: variables.$breakpoint-lg)
+		padding-right: 160px
+	@media (max-width: variables.$breakpoint-md)
+		padding-right: 0
+		order: 2
+
+.about__card
+	width: 340px
+	height: 350px
+	background-color: variables.$color-primary
+	border-radius: 5px
+	padding: 85px 65px 0
+	position: relative
+	z-index: 3
+	@media (max-width: variables.$breakpoint-xl)
+		width: 300px
+		height: 280px
+		padding: 45px 55px 0
+	@media (max-width: variables.$breakpoint-md)
+		width: 100%
+		height: auto
+		padding: 45px 55px
+	p
+		color: variables.$color-white
+		font-size: 1.87rem
+		line-height: 2.27rem
+		font-weight: 500
+		@media (max-width: variables.$breakpoint-xl)
+			font-size: 1.67rem
+
+.about__image
+	width: 100%
+	border-radius: 5px
+	overflow: hidden
+	position: absolute
+	z-index: 1
+	&.one
+		width: 350px
+		height: 300px
+		left: 290px
+		top: 40px
+		@media (max-width: variables.$breakpoint-xl)
+			top: 30px
+			width: 290px
+			height: 250px
+			left: 280px
+		@media (max-width: variables.$breakpoint-lg)
+			width: 180px
+		@media (max-width: variables.$breakpoint-md)
+			position: static
+			width: 100%
+			margin-top: 20px
+	&.two
+		width: 500px
+		height: 265px
+		left: 50px
+		top: 322px
+		@media (max-width: variables.$breakpoint-xl)
+			width: 440px
+			height: 255px
+			top: 240px
+		@media (max-width: variables.$breakpoint-lg)
+			width: 330px
+		@media (max-width: variables.$breakpoint-md)
+			display: none
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.about__pattern
+	position: absolute
+	left: -135px
+	top: 95px
+	width: 440px
+	@media (max-width: variables.$breakpoint-xl)
+		left: -75px
+		top: 75px
+		width: 370px
+	@media (max-width: variables.$breakpoint-md)
+		display: none
+
+.about__content
+	margin-top: 120px
+	display: flex
+	flex-direction: column
+	flex: 1
+	@media (max-width: variables.$breakpoint-xl)
+		margin-top: 100px
+	@media (max-width: variables.$breakpoint-lg)
+		margin-top: 60px
+	@media (max-width: variables.$breakpoint-md)
+		margin-top: 0
+		order: 1
+	span
+		font-size: 1.37rem
+		line-height: 1.37rem
+		text-transform: uppercase
+		color: variables.$color-primary
+		font-weight: 500
+		@media (max-width: variables.$breakpoint-sm)
+			text-align: center
+	h2
+		font-size: 2rem
+		line-height: 2.3rem
+		color: variables.$color-black
+		margin-top: 10px
+		@media (max-width: variables.$breakpoint-xl)
+			font-size: 1.8rem
+			line-height: 2.1rem
+		@media (max-width: variables.$breakpoint-sm)
+			text-align: center
+	p
+		font-size: 1.06rem
+		line-height: 1.56rem
+		color: variables.$color-gray
+		text-align: justify
+		letter-spacing: 0.3px
+		margin-top: 30px
+		@media (max-width: variables.$breakpoint-xl)
+			text-align: left
+	button
+		height: 50px
+		padding: 0 50px
+		background-color: variables.$color-primary
+		color: variables.$color-white
+		font-size: 1rem
+		line-height: 1rem
+		border-radius: 5px
+		text-transform: uppercase
+		font-weight: 500
+		display: inline-flex
+		width: max-content
+		align-items: center
+		justify-content: center
+		border: none
+		cursor: pointer
+		transition: background-color .3s ease, transform .2s ease
+		margin-top: 30px
+		@media (max-width: variables.$breakpoint-xl)
+			height: 45px
+			padding: 0 35px
+		@media (max-width: variables.$breakpoint-sm)
+			height: 50px
+			padding: 0 50px
+			width: 100%
+		&:hover
+			transform: translateY(-2px)

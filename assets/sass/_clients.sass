@@ -1,0 +1,120 @@
+@use 'variables'
+
+.clients
+	background: variables.$color-primary
+	padding: 120px 0
+	@media (max-width: variables.$breakpoint-xl)
+		padding: 105px 0
+	@media (max-width: variables.$breakpoint-md)
+		margin-top: 100px
+		padding: 100px 0
+	@media (max-width: variables.$breakpoint-sm)
+		margin-top: 60px
+		padding: 60px 0
+
+.clients__title
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	row-gap: 10px
+	> span
+		font-size: 1.37rem
+		line-height: 1.37rem
+		text-transform: uppercase
+		color: variables.$color-white
+		font-weight: 500
+	h2
+		font-size: 2rem
+		line-height: 2.3rem
+		color: variables.$color-white
+		text-align: center
+		@media (max-width: variables.$breakpoint-xl)
+			font-size: 1.8rem
+			line-height: 2.1rem
+		span
+			display: block
+
+.clients__content
+	margin-top: 40px
+
+.clients__list
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	gap: 40px
+	@media (max-width: variables.$breakpoint-xl)
+		gap: 25px
+	@media (max-width: variables.$breakpoint-md)
+		grid-template-columns: repeat(2, 1fr)
+
+.clients__item
+	border: 1px solid variables.$color-white
+	border-radius: 5px
+	padding: 35px 0 55px
+	display: flex
+	flex-direction: column
+	row-gap: 5px
+	align-items: center
+	overflow: hidden
+	@media (max-width: variables.$breakpoint-sm)
+		padding: 25px 0 45px
+	&.one
+		img
+			width: 51px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 43px
+	&.two
+		img
+			width: 60px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 51px
+	&.three
+		img
+			width: 87px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 74px
+	&.four
+		img
+			width: 76px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 65px
+	&.five
+		img
+			width: 59px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 50px
+	&.six
+		img
+			width: 52px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 44px
+	&.seven
+		img
+			width: 60px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 51px
+	&.eight
+		img
+			width: 44px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 37px
+
+.clients__brand
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 90px
+	width: 90px
+	@media (max-width: variables.$breakpoint-xl)
+		height: 75px
+	img
+		filter: variables.$filter-color-secondary
+
+.clients__name
+	color: variables.$color-white
+	font-size: 1.187rem
+	line-height: 1.187rem
+	text-align: center
+	font-weight: 600
+	text-transform: uppercase
+	letter-spacing: .3px

@@ -1,0 +1,26 @@
+@use 'variables'
+@use 'reset'
+@use 'header'
+@use 'hero'
+@use 'about'
+@use 'services'
+@use 'strategy'
+@use 'questions'
+@use 'clients'
+@use 'footer'
+@use 'modal'
+
+html
+	font-size: 16px
+	
+body
+	font-family: variables.$font-primary
+
+.container
+	width: 1280px
+	margin: 0 auto
+	@media (max-width: variables.$breakpoint-xl)
+		width: 85%
+
+.scroll-inactive
+	overflow: hidden

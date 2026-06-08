@@ -1,0 +1,151 @@
+@use 'variables'
+
+.services
+	padding: 140px 0 90px
+	@media (max-width: variables.$breakpoint-xl)
+		padding: 115px 0 90px
+	@media (max-width: variables.$breakpoint-md)
+		padding: 100px 0 0
+	@media (max-width: variables.$breakpoint-sm)
+		padding: 60px 0 0
+
+.services__title
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	row-gap: 10px
+	> span
+		font-size: 1.37rem
+		line-height: 1.37rem
+		text-transform: uppercase
+		color: variables.$color-primary
+		font-weight: 500
+	h2
+		font-size: 2rem
+		line-height: 2.3rem
+		color: variables.$color-black
+		text-align: center
+		@media (max-width: variables.$breakpoint-xl)
+			font-size: 1.8rem
+			line-height: 2.1rem
+		span
+			display: block
+
+.services__content
+	margin-top: 40px
+
+.services__list
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	gap: 40px
+	@media (max-width: variables.$breakpoint-xl)
+		gap: 25px
+	@media (max-width: variables.$breakpoint-lg)
+		grid-template-columns: repeat(2, 1fr)
+	@media (max-width: variables.$breakpoint-sm)
+		grid-template-columns: repeat(1, 1fr)
+
+.services__item
+	border: 1px solid #EEEEEE
+	border-radius: 5px
+	padding: 50px 30px
+	display: flex
+	flex-direction: column
+	row-gap: 10px
+	align-items: center
+	overflow: hidden
+	@media (max-width: variables.$breakpoint-xl)
+		padding: 40px 25px
+	@media (max-width: variables.$breakpoint-sm)
+		flex-direction: row
+		column-gap: 20px
+		padding: 25px
+	span
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 56px
+		width: 56px
+		@media (max-width: variables.$breakpoint-xl)
+			height: 50px
+			width: 50px
+	img
+		filter: variables.$filter-color-primary
+	&.one
+		img
+			width: 51px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 43px
+
+	&.two
+		img
+			width: 56px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 48px
+
+	&.three
+		img
+			width: 46px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 39px
+
+	&.four
+		img
+			width: 50px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 43px
+
+	&.five
+		img
+			width: 44px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 37px
+
+	&.six
+		img
+			width: 37px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 31px
+
+	&.seven
+		img
+			width: 40px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 34px
+
+	&.eight
+		img
+			width: 50px
+			@media (max-width: variables.$breakpoint-xl)
+				width: 43px
+
+.services__texts
+	display: flex
+	flex-direction: column
+	row-gap: 10px
+	@media (max-width: variables.$breakpoint-xl)
+		flex: 1
+	h3
+		color: variables.$color-black
+		font-size: 1.12rem
+		line-height: 1.62rem
+		text-align: center
+		font-weight: 600
+		@media (max-width: variables.$breakpoint-xl)
+			font-size: 1.00rem
+			line-height: 1.32rem
+		@media (max-width: variables.$breakpoint-sm)
+			text-align: left
+			font-size: 1.2rem
+			line-height: 1.60rem
+	p
+		color: variables.$color-gray
+		font-size: 1rem
+		line-height: 1.62rem
+		text-align: center
+		letter-spacing: 0.3px
+		@media (max-width: variables.$breakpoint-xl)
+			line-height: 1.42rem
+		@media (max-width: variables.$breakpoint-sm)
+			text-align: left
